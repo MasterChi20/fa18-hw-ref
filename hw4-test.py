@@ -96,8 +96,9 @@ class tester_zero_sum_subarray(unittest.TestCase):
 from io import StringIO
 import sys
 
+
 class ReplaceStd(object):
-	""" Let's make it pythonic. """
+	"""Let's make it pythonic."""
 
 	def __init__(self):
 		self.stdout = None
@@ -113,3 +114,5 @@ class ReplaceStd(object):
 if __name__ == "__main__":
 	with ReplaceStd():
 		unittest.main(module=__name__, buffer=True, exit=False)
+
+
