@@ -52,8 +52,22 @@ Example 2:
 		None
 """
 def alphabet_finder(s):
-	pass
-
+	MAX_INDEX = 122
+	MIN_INDEX = 97
+	newString = s
+	s = s.lower()
+	letters = {}
+	currentString = ""
+	for x in range(0,len(s)):
+		currentASCII = ord(s[x])
+		if currentASCII < MIN_INDEX or currentASCII > MAX_INDEX:
+			currentString += newString[x]
+			pass
+		else:
+			letters[s[x]] = True
+			currentString += newString[x]
+		if len(letters) >= 26:
+			return currentString
 
 """
 longest_unique_subarray
